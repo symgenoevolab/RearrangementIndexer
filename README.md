@@ -45,6 +45,9 @@ and N is the total number of ALGs.
 
 The higher the index, the higher the level of interchromosomal rearrangements.  
 
+[Figure_S14_Supplementary_Ri_explanation_with_tables.pdf](https://github.com/user-attachments/files/15922856/Figure_S14_Supplementary_Ri_explanation_with_tables.pdf)
+
+
 ### Input files
 
 The script expects a directory containing tsv files with the following format:
