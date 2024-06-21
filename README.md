@@ -50,7 +50,7 @@ The higher the index, the higher the level of interchromosomal rearrangements.
 
 ### Explanatory figure:
 ![Figure_S14_Supplementary_Ri_explanation_with_tables](https://github.com/symgenoevolab/RearrangementIndexer/assets/143068437/2fe49d8e-c372-41b2-abd2-bd295a33f739)
-Fig. 1 Explanation of the rearrangement index. Parts (A) to (F) each show a highly simplified example of how the rearrangement index is calculated under different amounts of ALG splitting and ALG combining. Grey horizontal lines represent chromosomes and colored vertical lines represent genes. In this scenario there are four ALGs (blue, green, yellow, red) and each has 5 genes. This does not vary in any of the examples.
+Explanatory figure | Explanation of the rearrangement index. Parts (A) to (F) each show a highly simplified example of how the rearrangement index is calculated under different amounts of ALG splitting and ALG combining. Grey horizontal lines represent chromosomes and colored vertical lines represent genes. In this scenario there are four ALGs (blue, green, yellow, red) and each has 5 genes. This does not vary in any of the examples.
 
 A high rearrangement index indicates many interchromosomal rearrangements while a low index indicates few rearrangements. 
 
