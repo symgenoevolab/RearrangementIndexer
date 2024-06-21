@@ -9,7 +9,7 @@ Lewin TD, Liao IJY, Luo YJ. Annelid comparative genomics and the evolution of ma
 
 If you have a set of bilaterian genomes and you want to know to what extent the genes within them have been scrambled by interchromosomal rearrangements, YES. For anything else, NO.
 
-## Exacuting the script
+## Executing the script
 
 ```
 python RearrangementIndexer.py input_directory
