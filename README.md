@@ -1,4 +1,4 @@
-![RearrangementIndexer](https://github.com/symgenoevolab/RearrangementIndexer/assets/143068437/8c18852d-fad9-4794-827e-998a0b79b97a)
+![RearrangementIndexer](https://github.com/symgenoevolab/RearrangementIndexer/assets/143068437/a22291b2-2c0c-41a3-bce7-52d0f5db9af1)
 
 # RearrangementIndexer.py: Quantify ancestral linkage group rearrangement in chromosome-level genomes
 
