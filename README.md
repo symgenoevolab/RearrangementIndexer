@@ -3,7 +3,7 @@
 This script takes as input a directory of 'coordinates files' containing information about genes' genomic location and ALG, and calculates a 'Rearrangement Index' for each file.
 
 Associated manuscript: 
-Lewin TD, Liao IJY, Luo YJ. Annelid comparative genomics and the evolution of massive lineage-specific genome rearrangement in bilaterians. BioRxiv (2024). Please cite this manuscript if you use this script.
+Lewin TD, Liao IJY, Luo YJ. Annelid comparative genomics and the evolution of massive lineage-specific genome rearrangement in bilaterians. BioRxiv (2024). (https://www.biorxiv.org/content/10.1101/2024.05.15.594353v1) Please cite this manuscript if you use this script. 
 
 ## Should I use this script?
 
