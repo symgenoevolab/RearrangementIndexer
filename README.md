@@ -35,8 +35,8 @@ CCHR (ALG combining parameter) is the proportion of genes on that chromosome tha
 
 By incorporating these parameters, the index accounts for both ALG splitting and ALG combining. 
 
-### Subsequently, the Ri for each genome is given by the equation:
-                      
+Subsequently, the Ri for each genome is given by the equation:
+                   
                 Ri =  (SUM(RALG))/N
 
 where Ri denotes the rearrangement index for the genome; 
@@ -45,10 +45,22 @@ and N is the total number of ALGs.
 
 The higher the index, the higher the level of interchromosomal rearrangements.  
 
-[Figure_S14_Supplementary_Ri_explanation_with_tables.pdf](https://github.com/user-attachments/files/15922856/Figure_S14_Supplementary_Ri_explanation_with_tables.pdf)
 
+### Explanatory figure:
+![Figure_S14_Supplementary_Ri_explanation_with_tables](https://github.com/symgenoevolab/RearrangementIndexer/assets/143068437/2fe49d8e-c372-41b2-abd2-bd295a33f739)
+Fig. 1 Explanation of the rearrangement index. Parts (A) to (F) each show a highly simplified example of how the rearrangement index is calculated under different amounts of ALG splitting and ALG combining. Grey horizontal lines represent chromosomes and colored vertical lines represent genes. In this scenario there are four ALGs (blue, green, yellow, red) and each has 5 genes. This does not vary in any of the examples.
 
-### Input files
+A high rearrangement index indicates many interchromosomal rearrangements while a low index indicates few rearrangements. 
+
+For instance, the RALG for example A (no rearrangements) blue ALG is calculated as follows: 5/5 blue genes are on one chromosome, so SCHR = 1; then, on this chromosome, 5/5 genes are blue genes so CCHR = 1. RALG = 1 – (1 × 1) = 0. In example A, this is true for all four ALGs. So Ri = (0 + 0 + 0 + 0) / 4 = 0. 
+
+In example B (ALG splitting by chromosome fission), the chromosome containing the blue ALG has fissioned into two parts. In this case, 3/5 blue genes are on one chromosome, so SCHR = 0.6; then, on this chromosome, 3/3 genes are blue genes (because there has been no fusion) so CCHR = 1. RALG = 1 – (0.6 × 1) = 0.4. In example B, the other three ALGs have RALG = 0, so Ri = (0.4 + 0 + 0 + 0) / 4 = 0.1.  
+
+In example D (ALG combining by chromosome fusion), the chromosomes containing the blue and green ALGs have fused. For all ALGs SCHR = 1 because all genes are on the same chromosome. But, CCHR = 0.5 for the green and blue ALGs because only 5/10 of the genes on this new chromosome are from each one. Therefore, for green and blue ALGs, RALG = 1 – (0.5 × 1) = 0.5. For red and yellow ALGs, RALG = 1 – (1 × 1) = 0. Then, Ri = (0.5 + 0.5 + 0 + 0) / 4 = 0.25.  
+
+Example G is the most complicated scenario, including extensive ALG splitting and combining similar to that observed in clitellate annelids. We will take the ALGs one by one. For the blue ALG, 3/5 genes are on one chromosome, so SCHR = 0.6. On this chromosome, 3/4 genes are blue, so CCHR = 0.75. RALG = 1 – (0.6 × 0.75) = 0.55. For the green ALG, 2/5 genes are on one chromosome, so SCHR = 0.4. On this chromosome, 2/4 genes are green, so CCHR = 0.5. RALG = 1 – (0.4 × 0.5) = 0.8. For the yellow ALG, 2/5 genes are on one chromosome, so SCHR = 0.4. On this chromosome, 2/4 genes are yellow, so CCHR = 0.5. RALG = 1 – (0.4 × 0.5) = 0.8. Finally, for the red ALG, 2/5 genes are on one chromosome, so SCHR = 0.4. On this chromosome, 2/2 genes are red, so CCHR = 0.4. RALG = 1 – (0.4 × 1) = 0.6. Then, Ri = (0.55 + 0.8 + 0.8 + 0.6) / 4 = 0.69.  This represents the highest rearrangement index in this simple set of scenarios. 
+
+### Input files:
 
 The script expects a directory containing tsv files with the following format:
 
@@ -73,7 +85,8 @@ Genes for each species should be placed in separate tsv files.
 
 How can I produce these files?  The output of our macrosynteny pipeline SyntenyFinder (https://github.com/symgenoevolab/SyntenyFinder) produces files called Species_coordinates.tsv which fit this format. However, as long as the files include the appropriate information, the method of generation does not matter.
 
-### Output files 
+### Output files:
+
 Rearrangement_index.tsv = Rearrangement index for each ALG in each species.
 
 Splitting_parameter.tsv = Splitting parameter for each ALG in each species (Splitting index = 1 splitting parameter).
