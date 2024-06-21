@@ -1,3 +1,5 @@
+![RearrangementIndexer](https://github.com/symgenoevolab/RearrangementIndexer/assets/143068437/8c18852d-fad9-4794-827e-998a0b79b97a)
+
 # RearrangementIndexer.py: Quantify ancestral linkage group rearrangement in chromosome-level genomes
 
 This script takes as input a directory of 'coordinates files' containing information about genes' genomic location and ALG, and calculates a 'Rearrangement Index' for each file.
