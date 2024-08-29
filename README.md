@@ -4,7 +4,7 @@
 
 This script takes as input a directory of 'coordinates files' containing information about genes' genomic location and ALG, and calculates a 'Rearrangement Index' for each file.
 
-Associated manuscript: 
+Citing RearrangementIndexer: 
 Lewin TD, Liao IJY, Luo YJ. Annelid comparative genomics and the evolution of massive lineage-specific genome rearrangement in bilaterians. Molecular Biology and Evolution 41, msae172 (2024). (https://doi.org/10.1093/molbev/msae172) Please cite this paper if you use this script. 
 
 ## Should I use this script?
